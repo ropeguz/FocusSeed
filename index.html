@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Seed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .animar-texto::after {
+      content: "barreras mentales";
+      animation: cambiarPalabra 6s infinite;
+    }
+
+    @keyframes cambiarPalabra {
+      0%   { content: "barreras mentales"; }
+      25%  { content: "atascos"; }
+      50%  { content: "fricciones"; }
+      75%  { content: "sobre pensar"; }
+      100% { content: "barreras mentales"; }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans leading-relaxed text-[18px]">
+
+  <!-- NAVIGATION -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50" role="navigation" aria-label="Main Navigation">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto px-6 py-4">
+      <div class="text-xl font-bold text-[#B967C7]">Focus Seed</div>
+      <ul class="hidden md:flex space-x-6 font-semibold text-gray-700">
+        <li><a href="#porque" class="hover:text-[#B967C7] focus:outline-[#9BC7C2]">Por qué</a></li>
+        <li><a href="#funciona" class="hover:text-[#B967C7] focus:outline-[#9BC7C2]">Cómo funciona</a></li>
+        <li><a href="#contacto" class="hover:text-[#B967C7] focus:outline-[#9BC7C2]">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="py-16 px-6 md:px-16 bg-gradient-to-b from-[#B967C7] to-[#9BC7C2]">
+    <div class="w-full max-w-7xl mx-auto grid gap-12 md:grid-cols-2 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
+          Tan solo comienza a organizarte
+        </h1>
+        <p class="text-white text-4xl md:text-5xl font-extrabold mt-2 drop-shadow-lg">sin <span class="animar-texto"></span></p>
+        <p class="mt-4 text-white text-lg md:text-xl max-w-2xl drop-shadow-lg">
+          ¿Te cuesta empezar tareas importantes? Focus Seed te guía con microacciones y estructura sin complicaciones.
+        </p>
+        <a href="#contacto" class="mt-8 inline-block bg-white text-[#B967C7] hover:bg-[#f0e5f8] font-semibold py-3 px-6 rounded-lg shadow transition focus:outline-[#9BC7C2]">
+          Plantá la semilla del cambio hoy 🌱
+        </a>
+      </div>
+      <img src="https://i.imgur.com/x4BMd21.png" alt="Ilustración Focus Seed" class="max-w-xs md:max-w-md mx-auto">
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="porque" class="py-16 px-6 md:px-16 text-center">
+    <h2 class="text-3xl font-bold text-[#B967C7] mb-4">El impulso que necesitas</h2>
+    <p class="text-lg text-gray-700 mb-10">Ficus será tu coach silencioso, ayudándote a avanzar día a día sin agobios.</p>
+    <div class="grid gap-10 md:grid-cols-3">
+      <div>
+        <img src="https://i.imgur.com/dEd4dRm.png" alt="Empieza sin pensar" class="mx-auto h-56">
+        <h3 class="text-2xl font-semibold mt-4 text-[#7d9b98]">No le des tantas vueltas</h3>
+        <p class="mt-2 text-[18px]">Te ayudará a aclarar tu mente y a dividir en microtareas.</p>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/GEix3AJ.png" alt="Reduce la ansiedad" class="mx-auto h-56">
+        <h3 class="text-2xl font-semibold mt-4 text-[#7d9b98]">Menos ruido, más foco</h3>
+        <p class="mt-2 text-[18px]">Evita listas infinitas. El sistema te ayuda a priorizar sin sobrecarga y a avanzar desde la calma.</p>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/XkcbfGY.png" alt="Minimalismo funcional" class="mx-auto h-56">
+        <h3 class="text-2xl font-semibold mt-4 text-[#7d9b98]">Sin fricciones</h3>
+        <p class="mt-2 text-[18px]">Nada que configurar. Sin distracciones. Solo dejarte guiar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="funciona" class="py-16 px-6 md:px-16 bg-[#e3efed]">
+    <h2 class="text-3xl font-bold text-center text-[#B967C7] mb-4">¿Cómo funciona?</h2>
+    <p class="text-center text-lg text-gray-700 mb-10">Ficus será tu coach y te guiará en tu día a día.</p>
+    <div class="max-w-4xl mx-auto grid gap-12 md:grid-cols-2 items-center">
+      <div>
+        <ol class="list-decimal list-inside text-lg space-y-4">
+          <li><strong>Check-in diario:</strong> Responde 3 preguntas para ganar claridad.</li>
+          <li><strong>Prioridad sin duda:</strong> Focus Seed detecta la tarea esencial.</li>
+          <li><strong>Microacción sugerida:</strong> Un primer paso tan pequeño que no puedes decir que no.</li>
+          <li><strong>Temporizador opcional:</strong> Inicia un sprint de 15 minutos.</li>
+          <li><strong>Reflexión ligera:</strong> Cierra el día con un breve repaso y refuerza el hábito.</li>
+        </ol>
+      </div>
+      <img src="https://i.imgur.com/fcPPeGK.png" alt="Cómo funciona Focus Seed" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-16 px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-center text-[#B967C7] mb-8">Plantá tu semilla</h2>
+    <form action="mailto:roperomingoguzman@gmail.com" method="POST" enctype="text/plain" class="max-w-2xl mx-auto space-y-6 bg-white p-8 rounded-xl shadow-md" aria-label="Formulario de contacto">
+      <div>
+        <label for="nombre" class="block mb-1 font-semibold">Nombre</label>
+        <input type="text" id="nombre" name="Nombre" class="w-full border border-gray-300 px-4 py-2 rounded-lg" required>
+      </div>
+      <div>
+        <label for="email" class="block mb-1 font-semibold">Email</label>
+        <input type="email" id="email" name="Email" class="w-full border border-gray-300 px-4 py-2 rounded-lg" required>
+      </div>
+      <div>
+        <label for="mensaje" class="block mb-1 font-semibold">Mensaje o pregunta</label>
+        <textarea id="mensaje" name="Mensaje" rows="4" class="w-full border border-gray-300 px-4 py-2 rounded-lg" required></textarea>
+      </div>
+      <button type="submit" class="w-full bg-[#B967C7] hover:bg-[#a050b1] text-white font-semibold py-3 px-6 rounded-lg transition focus:outline-[#9BC7C2]">
+        Quiero probar Focus Seed
+      </button>
+    </form>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 py-6">
+    &copy; 2025 Focus Seed. Avanza con claridad y propósito.<br>
+    <a href="https://storyset.com/user" class="text-[#B967C7] underline">User illustrations by Storyset</a>
+  </footer>
+
+</body>
+</html>
